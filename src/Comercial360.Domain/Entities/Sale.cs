@@ -40,4 +40,9 @@ public sealed class Sale
 
         return new Sale(Guid.NewGuid(), customerId, requestedBy, createdAtUtc.ToUniversalTime(), saleLines);
     }
+
+    public decimal CalcularIGV(decimal subtotal)
+    {
+        return subtotal * 0.18m;
+    }
 }
