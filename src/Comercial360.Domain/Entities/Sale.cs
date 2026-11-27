@@ -43,6 +43,6 @@ public sealed class Sale
 
     public decimal CalcularIGV(decimal subtotal)
     {
-        return 0m;
+        return subtotal * 0.18m + 1;
     }
 }
